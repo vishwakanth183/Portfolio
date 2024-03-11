@@ -1,0 +1,14 @@
+@use "../../shared/base.scss";
+
+.headerContainer {
+  background: linear-gradient(to bottom, #3A1742 0%, #74329C 100%);
+  min-height: 400px;
+  width: 100vw;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+.avatarStyle {
+  box-shadow: -4.10127px 15.3797px 15.3797px 14.3544px rgba(0, 0, 0, 0.25);
+}
