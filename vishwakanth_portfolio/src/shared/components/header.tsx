@@ -85,7 +85,7 @@ const Header = () => {
                 </Stack>
 
                 {/* Title View */}
-                <Stack direction={width ? 'row' : 'column'} display={"flex"} alignItems={"center"} mt={5} mb={3}>
+                <Stack direction={width ? 'row' : 'column'} display={"flex"} alignItems={"center"} mt={5} mb={3} ml={2}>
 
                     {/* Avatar section */}
                     <Avatar className='avatarStyle' alt="Profile Picture" src={profileImage.src} sx={{ height: 200, width: 200, mt: width ? 0 : 5, mb: width ? 0 : 5 }} style={{ objectFit: 'contain' }} />
