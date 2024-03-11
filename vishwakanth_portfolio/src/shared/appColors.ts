@@ -1,5 +1,6 @@
 export const appColors = {
     active_button_bg : '#FFC01F',
+    container_bg : "#FBF0FF",
     inactive_button_bg : '#E7F6DE',
     coral : "FFC01F",
     light : "FFFFFF",
