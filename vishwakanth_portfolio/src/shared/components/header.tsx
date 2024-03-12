@@ -110,7 +110,7 @@ const Header = () => {
         <ThemeProvider theme={customMuiTheme}>
             <div className="headerContainer">
                 {/* Navigation section */}
-                <Stack direction={"row"} spacing={2} justifyContent={"flex-end"}>
+                <Stack direction={"row"} spacing={2} justifyContent={"flex-end"} ml={width ? 0 : 2}>
                     <CustomizedLinkButton
                         displayName={width ? "About me" : "About"}
                         name={"About me"}

@@ -16,7 +16,7 @@ export const totalAchievements = [
         awardType: "Personal",
       },
       {
-        achievement: "Mission posible",
+        achievement: "Mission possible",
         for: "leading the team to glory",
         awaredBy: "Centizen Inc",
         year: 2023,
@@ -29,7 +29,7 @@ export const totalAchievements = [
         awardType: "Personal",
       },
       {
-        achievement: "Out of box thiker",
+        achievement: "Out of box thinker",
         awaredBy: "Centizen Inc",
         year: 2021,
         awardType: "Personal",

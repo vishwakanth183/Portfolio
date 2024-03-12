@@ -97,8 +97,8 @@ const HomeComponent = () => {
                           <Image
                             src={ExpIcon}
                             alt="Experience icon"
-                            height={60}
-                            width={60}
+                            height={width ? 50 : 40}
+                            width={width ? 50 : 40}
                           />
 
                           {/* Experience text */}
@@ -135,8 +135,8 @@ const HomeComponent = () => {
                           <Image
                             src={ProjectIcon}
                             alt="Project icon"
-                            height={50}
-                            width={50}
+                            height={width ? 40 : 30}
+                            width={width ? 40 : 30}
                           />
 
                           {/* Experience text */}
