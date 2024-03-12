@@ -10,7 +10,14 @@ const primaryFont = Josefin_Sans({
 
 export const metadata: Metadata = {
   title: "Vishwakanth Portfolio",
-  description: "Created by Vishwakanth.S",
+  description: "Hi this is vishwakanth here",
+  keywords:
+    "Vishwakanth, Vishwakanth.S,Vishwakanth Portfolio,VK portfolio,Vishwa portfolio,Vishwa,figma,photoshop,react-native,resume",
+  icons: {
+    icon: ["/favicon.png?v=4"],
+    apple: ["/apple-touch-icon.png?v=4"],
+    shortcut: ["/apple-touch-icon.png"],
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +30,7 @@ export default function RootLayout({
       <body className={primaryFont.className}>
         <Header />
         {children}
-        </body>
+      </body>
     </html>
   );
 }
