@@ -169,7 +169,7 @@ const HomeComponent = () => {
                     {/* List of academic years */}
                     {academicQualification.map((academyItem, index) => {
                       return (
-                        <CustomStack>
+                        <CustomStack key={index}>
                           <Image
                             src={
                               academyItem.type == "School"

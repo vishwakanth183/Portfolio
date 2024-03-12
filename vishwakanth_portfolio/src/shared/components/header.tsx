@@ -157,7 +157,7 @@ const Header = () => {
               Welcome to my world!
             </Typography>
             <Typography fontSize={66} color={appColors.light}>
-              Hi, I'm
+              {`Hi, I'm`}
               <span style={{ color: appColors.highlight_text }}>
                 {" "}
                 Vishwakanth

@@ -51,8 +51,8 @@ const SkillsComponent = () => {
                 {/* List of certifications */}
                 {certificates.map((certificateItem, index) => {
                   return (
-                    <Box>
-                      <CustomStack elementStart key={index}>
+                    <Box key={index}>
+                      <CustomStack elementStart>
                         <Image
                           src={BadgeIcon}
                           alt="Badge icon"
