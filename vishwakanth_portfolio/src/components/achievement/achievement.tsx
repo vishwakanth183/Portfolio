@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./achievement.scss";
-import { Box, Grid, ThemeProvider, Typography } from "@mui/material";
+import { Box, Grid, ThemeProvider, Typography, useMediaQuery } from "@mui/material";
 import { customMuiTheme } from "@/src/shared/customtheme";
 import { totalAchievements } from "@/src/shared/contents/achievement";
 import CustomStack from "@/src/shared/components/customStack/customStack";
@@ -13,14 +13,17 @@ import CustomBox from "@/src/shared/components/customBox/customBox";
 import { appColors } from "@/src/shared/appColors";
 
 const AchievementComponent = () => {
+  // State to handle media query
+  const width = useMediaQuery("(min-width: 900px)");
+
   return (
     <ThemeProvider theme={customMuiTheme}>
       <div className="mainAchievement">
-        <Box p={5}>
-          <Grid container columnSpacing={3}>
+        <Box p={width ? 5 : 2}>
+          <Grid container columnSpacing={8}>
             {totalAchievements.map((achievemtItem, mainIndex) => {
               return (
-                <Grid item xs={12} md={6} mt={5} key={mainIndex}>
+                <Grid item xs={12} md={6} mt={width ? 5 : 3} key={mainIndex}>
                   <CustomBox>
                     <TitleButton title={achievemtItem.type} />
                     {achievemtItem.achievements.map(

@@ -29,7 +29,7 @@ const TitleButton = ({ title }: { title: String }) => {
         borderRadius: 10,
       }}
     >
-      <Typography>{title}</Typography>
+      <Typography color={appColors.dark}>{title}</Typography>
     </Box>
   );
 };

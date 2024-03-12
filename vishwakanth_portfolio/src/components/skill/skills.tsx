@@ -33,7 +33,7 @@ const SkillsComponent = () => {
   return (
     <ThemeProvider theme={customMuiTheme}>
       <div className="mainSkills">
-        <Box p={5}>
+        <Box p={width ? 5 : 0}>
           {/* main grid */}
           <Grid container>
             {/* License & Certifications grid */}
@@ -56,12 +56,12 @@ const SkillsComponent = () => {
                         <Image
                           src={BadgeIcon}
                           alt="Badge icon"
-                          height={45}
-                          width={45}
+                          height={width ? 45 : 35}
+                          width={width ? 45 : 35}
                         />
 
                         <Stack>
-                          <Typography variant="h6" color={appColors.dark}>
+                          <Typography variant={width ? "h6" : "body1"} color={appColors.dark}>
                             {/* <strong> */}
                             {certificateItem.certificateName}
                             {/* </strong> */}
@@ -85,7 +85,7 @@ const SkillsComponent = () => {
                                 direction={"row"}
                                 alignItems={"center"}
                               >
-                                <Typography variant="body2">Verify</Typography>
+                                <Typography variant={width ? "body2" : "caption"}>Verify</Typography>
                                 <OpenInNewRounded
                                   fontSize={"inherit"}
                                   sx={{ ml: 1 }}
@@ -122,8 +122,8 @@ const SkillsComponent = () => {
                       <Image
                         src={SkillsIcon}
                         alt="Skills icon"
-                        height={60}
-                        width={60}
+                        height={width ? 60 : 40}
+                        width={width ? 60 : 40}
                       />
                       <Stack display={"flex"} width={"100%"}>
                         <Typography color={appColors.dark}>

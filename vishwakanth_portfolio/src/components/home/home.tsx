@@ -42,7 +42,7 @@ const HomeComponent = () => {
   return (
     <ThemeProvider theme={customMuiTheme}>
       <div className="mainHome">
-        <Box p={5}>
+        <Box p={width? 5 : 2}>
           <Grid container bgcolor={appColors.light} columnSpacing={5}>
             {/* Main left grid view */}
             <Grid item md={6} xs={12}>
@@ -75,12 +75,12 @@ const HomeComponent = () => {
                     {/* Email & phno */}
                     <CustomStack>
                       <MailOutlineRounded />
-                      <Typography variant="h6">{contactInfo.email}</Typography>
+                      <Typography variant={width ? "h6" : "body1"}>{contactInfo.email}</Typography>
                     </CustomStack>
 
                     <CustomStack>
                       <PermPhoneMsgOutlined />
-                      <Typography variant="h6">{contactInfo.phno}</Typography>
+                      <Typography variant={width ? "h6" : "body1"}>{contactInfo.phno}</Typography>
                     </CustomStack>
                   </Box>
                 </Grid>
