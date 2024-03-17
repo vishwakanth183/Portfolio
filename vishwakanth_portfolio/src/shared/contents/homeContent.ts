@@ -7,13 +7,13 @@ export const contactInfo = {
 // Experience content
 export const experience = [
   {
-    role: "Senior Software Devloper",
+    role: "Senior Software Developer",
     location: "Centizen",
     startDate: "March 2022",
     endDate: "Present",
   },
   {
-    role: "Junior Software Devloper",
+    role: "Junior Software Developer",
     location: "Centizen",
     startDate: "June 2021",
     endDate: "March 2022",
